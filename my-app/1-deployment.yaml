@@ -3,7 +3,7 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: nginx
-  Namespace: staging
+  namespace: argocd
   labels:
     app: nginx
 spec:
