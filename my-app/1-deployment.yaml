@@ -9,7 +9,7 @@ metadata:
 spec:
   replicas: 1
   selector:
-    matchlabels:
+    matchLabels:
       app: nginx
   template:
     metadata:
@@ -17,7 +17,7 @@ spec:
         app: nginx
     spec:
       containers:
-      - name: nginx
-        image: kazamisei98/nginx:v1.0
-        ports:
-        - containerPort: 80
+        - name: nginx
+          image: kazamisei98/nginx:v1.0
+          ports:
+            - containerPort: 80
